@@ -12,6 +12,6 @@ class CustomUser(AbstractUser):
 
     phone_number = PhoneNumberField(null=False, blank=False, unique=True)
     email = models.EmailField(_('E-mail address'), unique=True)
-    # first_name =
+    first_name = models.CharField()
     base_role = Role.USER
     # role = models.CharField
